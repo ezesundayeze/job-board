@@ -40,7 +40,7 @@
     </header>
 
     <!-- HOME -->
-    <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+    <section class="home-section section-hero overlay bg-image" style="background-image: url('../assets/images/hero_1.jpg');" id="home-section">
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -86,7 +86,7 @@
       
     </section>
     
-    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
+    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('../assets/images/hero_1.jpg');">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
@@ -143,128 +143,7 @@
 
         <div class="mb-5">
           <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-1.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-primary px-2 py-1 mb-3">Freelancer</span>
-              <h2><a href="job-single.html">Dropbox Product Designer</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>Melbourn</h3>
-              <span class="meta">Australia</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
-          </div>
-
-          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-2.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-warning px-2 py-1 mb-3">Full-time</span>
-              <h2><a href="job-single.html">Creative Director in Intercom</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>London</h3>
-              <span class="meta">United Kingdom</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
-          </div>
-
-          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-3.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-success px-2 py-1 mb-3">Part-time</span>
-              <h2><a href="job-single.html">FullStack Developer in Shopify</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>London</h3>
-              <span class="meta">United Kingdom</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
-          </div>
-          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-4.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-primary px-2 py-1 mb-3">Freelancer</span>
-              <h2><a href="job-single.html">Dropbox Product Designer</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>Melbourn</h3>
-              <span class="meta">Australia</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
-          </div>
-          
-          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-5.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-warning px-2 py-1 mb-3">Full-time</span>
-              <h2><a href="job-single.html">Creative Director in Intercom</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>London</h3>
-              <span class="meta">United Kingdom</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
-          </div>
-          
-          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-4.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-success px-2 py-1 mb-3">Part-time</span>
-              <h2><a href="job-single.html">FullStack Developer in Shopify</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>London</h3>
-              <span class="meta">United Kingdom</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
-          </div>
-
-          <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
-            <div class="col-md-2">
-              <a href="job-single.html"><img src="images/featured-listing-3.jpg" alt="Image" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4">
-              <span class="badge badge-success px-2 py-1 mb-3">Part-time</span>
-              <h2><a href="job-single.html">FullStack Developer in Shopify</a> </h2>
-              <p class="meta">Publisher: <strong>John Stewart</strong> In: <strong>Design</strong></p>
-            </div>
-            <div class="col-md-3 text-left">
-              <h3>London</h3>
-              <span class="meta">United Kingdom</span>
-            </div>
-            <div class="col-md-3 text-md-right">
-              <strong class="text-black">$60k &mdash; $100k</strong>
-            </div>
+           <!-- job list -->
           </div>
 
         </div>
@@ -305,16 +184,16 @@
             
           </div>
           <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_mailchimp.svg" alt="Image" class="img-fluid logo-1">
+            <img src="../assets/images/logo_mailchimp.svg" alt="Image" class="img-fluid logo-1">
           </div>
           <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_paypal.svg" alt="Image" class="img-fluid logo-2">
+            <img src="../assets/images/logo_paypal.svg" alt="Image" class="img-fluid logo-2">
           </div>
           <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_stripe.svg" alt="Image" class="img-fluid logo-3">
+            <img src="../assets/images/logo_stripe.svg" alt="Image" class="img-fluid logo-3">
           </div>
           <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_visa.svg" alt="Image" class="img-fluid logo-4">
+            <img src="../assets/images/logo_visa.svg" alt="Image" class="img-fluid logo-4">
           </div>
         </div>
       </div>
@@ -329,7 +208,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6 mx-auto">
-                <img class="img-fluid mx-auto" src="images/person_1.jpg" alt="Image">
+                <img class="img-fluid mx-auto" src="../assets/images/person_1.jpg" alt="Image">
                 <blockquote>
                   <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
                   <p><cite> &mdash; Richard Anderson</cite></p>
@@ -341,7 +220,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6 mx-auto">
-                <img class="img-fluid mx-auto" src="images/person_2.jpg" alt="Image">
+                <img class="img-fluid mx-auto" src="../assets/images/person_2.jpg" alt="Image">
                 <blockquote>
                   <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
                   <p><cite> &mdash; Chris Peters</cite></p>
@@ -354,7 +233,7 @@
 
     </section>
 
-    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
+    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('../assets/images/hero_1.jpg');">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8">
