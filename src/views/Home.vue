@@ -144,6 +144,7 @@
         <div class="mb-5">
           <div class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
            <!-- job list -->
+          <joblist/>
           </div>
 
         </div>
@@ -163,7 +164,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -308,3 +308,15 @@
   
   </div>
 </template>
+
+<script>
+import joblist from "@/components/Joblist";
+
+export default{
+  name:"home",
+  components:{
+    joblist
+  }
+
+}
+</script>
