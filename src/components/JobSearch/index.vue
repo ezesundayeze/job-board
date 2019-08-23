@@ -6,13 +6,13 @@
               <h1 class="text-white font-weight-bold">Python Jobs</h1>
               <p>Find your dream job</p>
             </div>
-            <form method="post" class="search-jobs-form">
+            <form @submit.prevent="searchJobs" class="search-jobs-form">
               <div class="row mb-5">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <input v-model="jobSearch" type="text" class="form-control form-control-lg" placeholder="Job title, keywords...">
+                  <input v-model="jobTitle" type="text" class="form-control form-control-lg" placeholder="Job title, keywords...">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <input v-model="jobSearch" class="form-control" id="location" placeholder="Job location"/>
+                  <input v-model="jobLocation" class="form-control" id="location" placeholder="Job location"/>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                   <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search"><span class="icon-search icon mr-2"></span>Search Job</button>
@@ -35,26 +35,31 @@ export default{
 
     data(){
         return {
-            params:{
+            
                 jobTitle:"",
                 jobLocation:""
-            }
-
         }
-    },
-    methods:{
-        ...mapState(["jobs"]),
-        ...mapActions(["addJobs"])
     },
     watch:{
-        jobTitle:function(value) {
-            axios.get(`https://jobs.github.com/positions.json?description=${value.params.jobTitle}&location=${value.params.jobLocation}`).then((data)=>{
+        jobTitle(value) {
+          this.jobTitle=value
+        }, 
+        jobLocation(value){
+          this.jobLocation=value
+        }
+
+    },
+
+    methods:{
+        ...mapState(["jobs"]),
+        ...mapActions(["addJobs"]),
+
+            searchJobs(){
+            this.$router.replace("/#joblist")
+            axios.get(`https://jobs.github.com/positions.json?search=${this.jobTitle}&location=${this.jobLocation}`).then((data)=>{
               this.addJobs(data.data)
-              console.log(this.params)
             }).catch((error)=>{console.log("unable to reach server::"+error)})
         }
-        
-
     }
 
 

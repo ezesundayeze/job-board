@@ -95,13 +95,12 @@
 
     
 
-    <section class="site-section">
+    <section class="site-section" id="joblist">
       <div class="container">
 
         <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2">109,234 Job Listed</h2>
-          </div>
+         <!-- Stat -->
+         <JobStat/>
         </div>
         
 
@@ -276,12 +275,15 @@
 <script>
 import joblist from "@/components/Joblist";
 import jobSearch from "@/components/JobSearch"
+import JobStat from "@/components/JobStat"
 
 export default{
   name:"home",
   components:{
     joblist,
-    jobSearch
+    jobSearch,
+    JobStat
+
   }
 
 }

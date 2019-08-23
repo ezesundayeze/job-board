@@ -3,7 +3,7 @@
           <div v-if="jobs().length>0">
             <div v-for="job in jobs()" :key="job.id" class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
               <div class="col-md-2">
-                <a href="job-single.html"><img src="images/featured-listing-1.jpg" alt="Image" class="img-fluid"></a>
+                <a href="job-single.html"><img :src="job.company_logo" alt="Image" class="img-fluid"></a>
               </div>
               <div class="col-md-4">
                 <span class="badge badge-primary px-2 py-1 mb-3">{{job.type}}</span>
