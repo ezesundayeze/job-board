@@ -1,4 +1,4 @@
-# jobs
+# A simple implementation of Vue and Vuex to create a job board
 
 ## Project setup
 ```
