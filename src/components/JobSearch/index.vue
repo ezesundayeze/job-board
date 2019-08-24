@@ -3,8 +3,8 @@
     <div class="row align-items-center justify-content-center">
           <div class="col-md-12">
             <div class="mb-5 text-center">
-              <h1 class="text-white font-weight-bold">Python Jobs</h1>
-              <p>Find your dream job</p>
+              <h1 class="text-white font-weight-bold">Software Dev Jobs</h1>
+              <p>Find your dream job...</p>
             </div>
             <form @submit.prevent="searchJobs" class="search-jobs-form">
               <div class="row mb-5">
@@ -61,8 +61,6 @@ export default{
             }).catch((error)=>{console.log("unable to reach server::"+error)})
         }
     }
-
-
 
 }
 </script>

@@ -3,15 +3,15 @@
           <div v-if="jobs().length>0">
             <div v-for="job in jobs()" :key="job.id" class="row align-items-start job-item border-bottom pb-3 mb-3 pt-3">
               <div class="col-md-2">
-                <a href="job-single.html"><img :src="job.company_logo" alt="Image" class="img-fluid"></a>
+                <router-link :to="'/position/'+job.id"><img :src="job.company_logo" alt="Image" class="img-fluid"></router-link>
               </div>
               <div class="col-md-4">
                 <span class="badge badge-primary px-2 py-1 mb-3">{{job.type}}</span>
-                <h2><a :href="job.url">{{job.title}}</a> </h2>
-                <p class="meta"><a :href="job.url">Apply</a></p>
+                <h2><router-link :to="'/position/'+job.id">{{job.title}}</router-link> </h2>
+                <p class="meta"><router-link :to="'/position/'+job.id"><span>Apply</span></router-link></p>
               </div>
               <div class="col-md-3 text-left">
-                <h3>Location</h3>
+                <h3 >Location</h3>
                 <span class="meta">{{job.location}}</span>
               </div>
               <div class="col-md-3 text-md-right">
@@ -34,12 +34,18 @@ vue.use(axios)
 
 export default {
     name:"job",
+    computed:{
+      
+    },
     methods:{
         ...mapState(["jobs"]),
-        ...mapActions(["addJobs"])
+        ...mapActions(["addJobs", "addDetail"]),
+        addDetails(detail){
+          this.addDetail(detail)
+        }
     },
     created(){
-       axios.get("https://jobs.github.com/positions.json?description=python&location=us").then((data)=>{
+       axios.get("https://jobs.github.com/positions.json?search=python&location=us").then((data)=>{
               this.addJobs(data.data)
             }).catch((error)=>{console.log("unable to reach server::"+error)})
       },
