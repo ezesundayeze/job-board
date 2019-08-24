@@ -1,5 +1,5 @@
-# A simple implementation of Vue and Vuex to create a job board
-__This template is made with  by Colorlib__
+## A simple implementation of Vue and Vuex to create a job board
+__Jobs are from Github job API__
 
 ## Project setup
 ```
@@ -28,3 +28,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+__The html template is made with love  by Colorlib__
