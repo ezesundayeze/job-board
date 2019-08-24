@@ -1,4 +1,5 @@
 # A simple implementation of Vue and Vuex to create a job board
+__This template is made with  by Colorlib__
 
 ## Project setup
 ```
